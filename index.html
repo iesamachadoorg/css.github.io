@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>CSS</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Bernat Co" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<meta name="description" content="CSS" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-single-page"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<header id="header">
+<div id="headerContent">
+<h1>CSS</h1>
+</div>
+</header>
+<section id="main">
+<article class="node level-1-node" id="exe-node-0">
+<header class="nodeDecoration">
+<h1 id="exenode_0_CSS" class="nodeTitle">CSS</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id0-0">
+<div class="iDevice emphasis0" >
+<div id="ta0_120_2" class="block iDevice_content">
+
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id17-0">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Donde pongo el código css?</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta17_131_2" class="block iDevice_content">
+<div class="exe-text"><p>En un archivo a parte .css o en el head del html</p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id18-0">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">En un fichero a parte</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta18_132_2" class="block iDevice_content">
+<div class="exe-text"><p>Para ponerlo en un fichero a parte, hay que añadir esta linea en el head:</p>
+<p>&lt;link rel="stylesheet" type="text/css" href="css/style.css" /&gt;</p>
+<p>y tener el fichero con el código css, en una carpeta css y un fichero que se llame style.css</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id19-0">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">En el Head directamente</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta19_133_2" class="block iDevice_content">
+<div class="exe-text"><p>Podemos añadir el estilo css directamente dentro del head del html dentro de una etiqueta </p>
+<p>&lt;style&gt;  </p>
+<p>//mi codigo css.</p>
+<p>#caja1{</p>
+<p>   position:absolute</p>
+<p>   width:200;</p>
+<p>   top:20px;:</p>
+<p>}</p>
+<p>&lt;/style&gt;</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-1">
+<header class="nodeDecoration">
+<h1 id="exenode_1_Selectores" class="nodeTitle">Selectores</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id1-1">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Sintaxis selector</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1_121_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="Sintaxis-CSS-Selector-propiedad-768x363.png" alt="" width="768" height="363" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id2-1">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Selectores básicos</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta2_122_2" class="block iDevice_content">
+<div class="exe-text"><table>
+<tbody>
+<tr>
+<td><strong>Selector</strong></td>
+<td><strong>Descripción</strong></td>
+</tr>
+<tr>
+<td><strong>*</strong></td>
+<td>Selecciona todos los elementos del DOM</td>
+</tr>
+<tr>
+<td><strong>etiqueta</strong></td>
+<td>Selecciona todas las etiquetas indicadas</td>
+</tr>
+<tr>
+<td><strong>.class</strong></td>
+<td>Selección de los elementos con la clase .class</td>
+</tr>
+<tr>
+<td><strong>#id</strong></td>
+<td>Selección del elemento con id #id</td>
+</tr>
+<tr>
+<td><strong>sel1 sel2</strong></td>
+<td>Selección de los selectores sel2 que se encuentren dentro de los selectores sel1</td>
+</tr>
+<tr>
+<td><strong>.class1.class2</strong></td>
+<td>Selección de los elementos con las dos clases: class1 y class2</td>
+</tr>
+<tr>
+<td><strong>sel1.class1</strong></td>
+<td>Selección de todos los selectores sel1 con clase class1</td>
+</tr>
+<tr>
+<td><strong>sel1, sel2</strong></td>
+<td>Selección de todos los selectores separados por comas</td>
+</tr>
+<tr>
+<td><strong>sel1 &gt; sel2</strong></td>
+<td>Selección de los selectores sel2 cuando son hijos de sel1</td>
+</tr>
+<tr>
+<td><strong>sel1 + sel2</strong></td>
+<td>Selección del selector sel2 cuando es hermano de sel1 (su elemento padre es el mismo)</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id8-1">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Juego para apreder selectores</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta8_128_2" class="block iDevice_content">
+<div class="exe-text"><h1>CSS Dinner</h1>
+<p><a href="https://flukeout.github.io/">https://flukeout.github.io/</a></p>
+<p></p>
+<p><img src="Captura_de_pantalla_de_2023-11-17_07-09-33.png" alt="" width="802" height="693" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-2">
+<header class="nodeDecoration">
+<h1 id="exenode_2_Unidadesdemedida" class="nodeTitle">Unidades de medida</h1>
+</header>
+<article class="iDevice_wrapper textIdevice" id="id3-2">
+<div class="iDevice emphasis0" >
+<div id="ta3_123_2" class="block iDevice_content">
+<div class="exe-text"><table>
+<tbody>
+<tr>
+<th colspan="2">Longitudes relativas</th>
+</tr>
+<tr>
+<td><strong>px</strong></td>
+<td>Píxeles (relativo al dispositivo)</td>
+</tr>
+<tr>
+<td><strong>em</strong></td>
+<td>Relativo al tamaño de la fuente del elemento ( 2em significa 2 veces el tamaño de la fuente actual)</td>
+</tr>
+<tr>
+<td><strong>%</strong></td>
+<td>Porcentaje (relativo al elemento padre)</td>
+</tr>
+<tr>
+<td><strong>vh y vw</strong></td>
+<td>Medidas relativas de acuerdo al viewport<br />1vh = 1% de la altura del viewport<br />100vh = altura del viewport</td>
+</tr>
+<tr>
+<th colspan="2">Longitudes absolutas</th>
+</tr>
+<tr>
+<td><strong>in</strong></td>
+<td>Pulgadas (1pulgada = 2.54 cm)</td>
+</tr>
+<tr>
+<td><strong>cm</strong></td>
+<td>Centímetros</td>
+</tr>
+<tr>
+<td><strong>mm</strong></td>
+<td>Milímetros</td>
+</tr>
+<tr>
+<td><strong>pt</strong></td>
+<td>Puntos (1pt = 1/72 pulgadas)</td>
+</tr>
+<tr>
+<td><strong>pc</strong></td>
+<td>Picas (1pica = 12 puntos)</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id7-2">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Juego para acertar medidas</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta7_127_2" class="block iDevice_content">
+<div class="exe-text"><p>Juego para acertar medidas en pixels de pantalla</p>
+<h1>pixact.ly</h1>
+<p><a href="https://pixact.ly/">https://pixact.ly/</a></p>
+<p><img src="Captura_de_pantalla_de_2023-11-17_07-08-24.png" alt="" width="802" height="693" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-3">
+<header class="nodeDecoration">
+<h1 id="exenode_3_Coloresbsicos" class="nodeTitle">Colores básicos</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id4-3">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Colores</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta4_124_2" class="block iDevice_content">
+<div class="exe-text"><table>
+<tbody>
+<tr>
+<th colspan="4">Colores básicos</th>
+</tr>
+<tr>
+<th>Color</th>
+<th>Nombre</th>
+<th>HEX</th>
+<th>RGB</th>
+</tr>
+<tr>
+<td style="background: black;"></td>
+<td>black</td>
+<td>#000000</td>
+<td>0,0,0</td>
+</tr>
+<tr>
+<td style="background: white;"></td>
+<td><dfn id="white0">white</dfn></td>
+<td>#ffffff</td>
+<td>255,255,255</td>
+</tr>
+<tr>
+<td style="background: red;"></td>
+<td><dfn id="red0">red</dfn></td>
+<td>#ff0000</td>
+<td>255,0,0</td>
+</tr>
+<tr>
+<td style="background: blue;"></td>
+<td>blue</td>
+<td>#0000ff</td>
+<td>0,0,255</td>
+</tr>
+<tr>
+<td style="background: yellow;"></td>
+<td>yellow</td>
+<td>#ffff00</td>
+<td>255,255,0</td>
+</tr>
+<tr>
+<td style="background: gray;"></td>
+<td><dfn id="gray0">gray</dfn></td>
+<td>#808080</td>
+<td>128,128,128</td>
+</tr>
+<tr>
+<td style="background: green;"></td>
+<td><dfn id="green0">green</dfn></td>
+<td>#008000</td>
+<td>0,128,0</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id5-3">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Cubo RGB /  CMYK</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta5_125_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="Figura-3-Ilustracion-sobre-un-cubo-del-Espacio-de-Color-RGB-Notese-que-el-color-negro.png" alt="" width="393" height="339" /></p>
+<p>Cuando mezclamos los 3 colores RGB de 2 en dos, salen las otras esquinas del cubo, que curiosamente, son los colores Cian Magenta y Amarillo, CMYK que són los colores básicos de la pintura en contraposición de RGB que són los 3 colores básicos de luz.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id6-3">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Juego para acertar colores</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta6_126_2" class="block iDevice_content">
+<div class="exe-text"><p>Juego para acertar colores en Hexadecimal.</p>
+<h1>hex invaders</h1>
+<p><a href="http://www.hexinvaders.com/">http://www.hexinvaders.com/</a></p>
+<p></p>
+<p><img src="Captura_de_pantalla_de_2023-11-17_07-05-14.png" alt="" width="802" height="693" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-4">
+<header class="nodeDecoration">
+<h1 id="exenode_4_Coloryfondo" class="nodeTitle">Color y fondo</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id9-4">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Color y fondo</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta9_129_2" class="block iDevice_content">
+<div class="exe-text"><table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Descripción</th>
+<th>Valores</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code><strong>color</strong></code></td>
+<td>Color del texto</td>
+<td>RGB | HSL | HEX | nombre del color | RGBA | HSLA</td>
+</tr>
+<tr>
+<td><code><strong>background-color</strong></code></td>
+<td>Color de fondo</td>
+<td>RGB | HSL | HEX | nombre del color | RGBA | HSLA</td>
+</tr>
+<tr>
+<td><code><strong>background-image</strong></code></td>
+<td>Imagen de fondo</td>
+<td>url(«…») | none</td>
+</tr>
+<tr>
+<td><code><strong>background-repeat</strong></code></td>
+<td>Repetición de la imagen de fondo</td>
+<td>repeat | repeat-x | repeat-y | no-repeat</td>
+</tr>
+<tr>
+<td><code><strong>background-attachment</strong></code></td>
+<td>Desplazamiento de la imagen de fondo</td>
+<td>scroll | fixed</td>
+</tr>
+<tr>
+<td><code><strong>background-position</strong></code></td>
+<td>Posición de la imagen de fondo</td>
+<td>percentage | length | left | center | right</td>
+</tr>
+<tr>
+<td><code><strong>background-size</strong></code></td>
+<td>Tamaño de la imagen de fondo</td>
+<td>auto | cover | contain | valor</td>
+</tr>
+<tr>
+<td><code><strong>Opacity</strong></code></td>
+<td>Transparencia de un elemento</td>
+<td>[ 0 – 1 ] (0 → totalmente transparente)</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-8">
+<header class="nodeDecoration">
+<h1 id="exenode_8_Posicion" class="nodeTitle">Posicion</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id13-8">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Tamaño de un DIV</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta13_127_2" class="block iDevice_content">
+<div class="exe-text"><p>Un DIV es una caja sin tamaño ni formato predefinido. Es una caja que podemos hacer con ella lo que queramos.</p>
+<p>Al DIV, podremos ponerle una imagen de fondo, darle un tamaño y posicionarla en la pantalla donde queramos.</p>
+<p>Para dar tamaño a un DIV, usaremos los atributos</p>
+<ul>
+<li><strong>width</strong></li>
+<li><strong>height</strong></li>
+</ul>
+<p>Ejemplo</p>
+<p>#caja {</p>
+<p>     width:200px;</p>
+<p>     height:300px;</p>
+<p>}</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id14-8">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Posición de un DIV en la pantalla</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta14_128_2" class="block iDevice_content">
+<div class="exe-text"><p>Para posicionar un div, hay muchas formas, la más simple es:</p>
+<p>Position:Absolute</p>
+<p>Esto, ubica nuestro elemento en una esquina de la pantalla y con los parametros de posición, podemos ubicarla pixel a pixel donde queramos. Los parametros de posición son:</p>
+<ul>
+<li>top</li>
+<li>bottom</li>
+<li>left</li>
+<li>rigth</li>
+</ul>
+<p>Con esto, lo moveremos tantos pixeles a un lado u otro.</p>
+<p>Ejemplo:</p>
+<p></p>
+<p>#caja1{</p>
+<p> position:absolute;</p>
+<p>top :200px;</p>
+<p>left;200px;</p>
+<p>}</p>
+<p></p>
+<p>Para usar este tipo de ubicación indicando el sitio exacto de la pantalla, <strong>SIEMPRE</strong> deberemos poner la linea</p>
+<p><strong>position:absolute;</strong></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id15-8">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Cajas sobre Cajas</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta15_129_2" class="block iDevice_content">
+<div class="exe-text"><p>Las cajas se pueden superponer. Entonces, ¿qué capa está encima?</p>
+<p></p>
+<p>Para ello, usaremos el parametro z-index con un número. El número más alto, estará encima del resto.</p>
+<p>Ejemplo:</p>
+<p>#Caja1{</p>
+<p>     z-index:1;</p>
+<p>}</p>
+<p>#caja2 {</p>
+<p>    z-index:2;</p>
+<p>}</p>
+<p></p>
+<p><strong>La caja 2, estará encima de la caja 1</strong></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id16-8">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Eventos sobre un elemento</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta16_130_2" class="block iDevice_content">
+<div class="exe-text"><p>Podemos cambiar el estilo de algún elemento por ejemplo cuando pongamos el ratón encima.</p>
+<p>Por ejemplo, podemos hacer que cuando ponga el ratón encima de una caja, esta crezca de tamaño o desaparezca.</p>
+<p></p>
+<p>Con opacity, podemos hacer que la caja se vuelva transparente, por ejemplo</p>
+<p></p>
+<p>Podemos tener un css así</p>
+<p></p>
+<p>#caja1:{</p>
+<p>    position:absolute;</p>
+<p>    top:200px:;</p>
+<p>    left:200px;</p>
+<p>    backgroud-image:url(mifoto.jpg);</p>
+<p>}</p>
+<p>caja1:hover{</p>
+<p>    opacity:0;</p>
+<p>}</p>
+<p></p>
+<p>el hover, añadirá la propiedad opacity ( transparente) a nuestra caja que dejará de verse</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-5">
+<header class="nodeDecoration">
+<h1 id="exenode_5_Texto" class="nodeTitle">Texto</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id10-5">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Texto</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta10_130_2" class="block iDevice_content">
+<div class="exe-text"><table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Descripción</th>
+<th>Valores</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code><strong>text-indent</strong></code></td>
+<td>Desplazamiento de la primera línea del texto</td>
+<td>longitud | porcentaje</td>
+</tr>
+<tr>
+<td><code><strong>text-align</strong></code></td>
+<td>Alineamiento del texto</td>
+<td>left | right | center | justify</td>
+</tr>
+<tr>
+<td><code><strong>text-decoration</strong></code></td>
+<td>Efectos de subrayado y tachado</td>
+<td>none | underline | overline | line-through</td>
+</tr>
+<tr>
+<td><code><strong>letter-spacing</strong></code></td>
+<td>Espacio entre caracteres</td>
+<td>normal | longitud</td>
+</tr>
+<tr>
+<td><code><strong>word-spacing</strong></code></td>
+<td>Espacio entre palabras</td>
+<td>normal | longitud</td>
+</tr>
+<tr>
+<td><code><strong>text-transform</strong></code></td>
+<td>Transformación a mayúsculas / minúsculas</td>
+<td>capitalize | uppercase | lowercase | none</td>
+</tr>
+<tr>
+<td><code><strong>line-height</strong></code></td>
+<td>Tamaño del espacio entre líneas</td>
+<td>longitud | porcentaje</td>
+</tr>
+<tr>
+<td><code><strong>vertical-align</strong></code></td>
+<td>Alineación vertical</td>
+<td>top | middle | bottom<br />baseline | sub | super | valor</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-6">
+<header class="nodeDecoration">
+<h1 id="exenode_6_Fuentes" class="nodeTitle">Fuentes</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id11-6">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Fuentes</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta11_131_2" class="block iDevice_content">
+<div class="exe-text"><table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Descripción</th>
+<th>Valores</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code><strong>font-family</strong></code></td>
+<td>Familias de fuentes</td>
+<td>nombre-familia|nombre-familia-genérica| *</td>
+</tr>
+<tr>
+<td><code><strong>font-style</strong></code></td>
+<td>Estilo de la fuente</td>
+<td>normal | italic | oblique</td>
+</tr>
+<tr>
+<td><code><strong>font-variant</strong></code></td>
+<td>Convierte a mayúsculas manteniendo un tamaño inferior</td>
+<td>normal | small-caps</td>
+</tr>
+<tr>
+<td><code><strong>font-weight</strong></code></td>
+<td>Anchura de los caracteres. Normal = 400, Negrita = 700</td>
+<td>normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900</td>
+</tr>
+<tr>
+<td><code><strong>font-size</strong></code></td>
+<td>Tamaño de la fuente</td>
+<td>xx-small | x-small | small | medium | large | x-large | xx-large | larger | smaller | longitud | porcentaje</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-7">
+<header class="nodeDecoration">
+<h1 id="exenode_7_Listas" class="nodeTitle">Listas</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id12-7">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Listas</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta12_132_2" class="block iDevice_content">
+<div class="exe-text"><table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Descripción</th>
+<th>Valores</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code><strong>list-style-type</strong></code></td>
+<td>Estilo aplicable a los marcadores visuales de las listas</td>
+<td>disc | circle | square | decimal | decimal-leading-zero | lower-roman | upper-roman | lower-greek | lower-latin | upper-latin | armenian | georgian | lower-alpha | upper-alpha | none</td>
+</tr>
+<tr>
+<td><code><strong>list-style-image</strong></code></td>
+<td>Imagen aplicable a los elementos de las listas</td>
+<td>url(«…») | none</td>
+</tr>
+<tr>
+<td><code><strong>list-style-position</strong></code></td>
+<td>Posición dentro de la lista de los elementos marcadores de las listas</td>
+<td>inside | outside</td>
+</tr>
+<tr>
+<td><code><strong>list-style</strong></code></td>
+<td>Permite establecer el estilo de la lista, la imagen y/o la posición</td>
+<td>list-style-type | list-style-position | list-style-image</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+</section>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+
+
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body>
+</html>
