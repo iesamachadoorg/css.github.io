@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Posicion | CSS </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Bernat Co" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-8"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
+<header id="header" ><div id="headerContent">CSS</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">CSS</a></li>
+   <li><a href="selectores.html" class="no-ch">Selectores</a></li>
+   <li><a href="unidades_de_medida.html" class="no-ch">Unidades de medida</a></li>
+   <li><a href="colores_bsicos.html" class="no-ch">Colores básicos</a></li>
+   <li><a href="color_y_fondo.html" class="no-ch">Color y fondo</a></li>
+   <li id="active"><a href="posicion.html" class="active no-ch">Posicion</a></li>
+   <li><a href="texto.html" class="no-ch">Texto</a></li>
+   <li><a href="fuentes.html" class="no-ch">Fuentes</a></li>
+   <li><a href="listas.html" class="no-ch">Listas</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="color_y_fondo.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="texto.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Posicion</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id13">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Tamaño de un DIV</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta13_127_2" class="block iDevice_content">
+<div class="exe-text"><p>Un DIV es una caja sin tamaño ni formato predefinido. Es una caja que podemos hacer con ella lo que queramos.</p>
+<p>Al DIV, podremos ponerle una imagen de fondo, darle un tamaño y posicionarla en la pantalla donde queramos.</p>
+<p>Para dar tamaño a un DIV, usaremos los atributos</p>
+<ul>
+<li><strong>width</strong></li>
+<li><strong>height</strong></li>
+</ul>
+<p>Ejemplo</p>
+<p>#caja {</p>
+<p>     width:200px;</p>
+<p>     height:300px;</p>
+<p>}</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id14">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Posición de un DIV en la pantalla</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta14_128_2" class="block iDevice_content">
+<div class="exe-text"><p>Para posicionar un div, hay muchas formas, la más simple es:</p>
+<p>Position:Absolute</p>
+<p>Esto, ubica nuestro elemento en una esquina de la pantalla y con los parametros de posición, podemos ubicarla pixel a pixel donde queramos. Los parametros de posición son:</p>
+<ul>
+<li>top</li>
+<li>bottom</li>
+<li>left</li>
+<li>rigth</li>
+</ul>
+<p>Con esto, lo moveremos tantos pixeles a un lado u otro.</p>
+<p>Ejemplo:</p>
+<p></p>
+<p>#caja1{</p>
+<p> position:absolute;</p>
+<p>top :200px;</p>
+<p>left;200px;</p>
+<p>}</p>
+<p></p>
+<p>Para usar este tipo de ubicación indicando el sitio exacto de la pantalla, <strong>SIEMPRE</strong> deberemos poner la linea</p>
+<p><strong>position:absolute;</strong></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id15">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Cajas sobre Cajas</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta15_129_2" class="block iDevice_content">
+<div class="exe-text"><p>Las cajas se pueden superponer. Entonces, ¿qué capa está encima?</p>
+<p></p>
+<p>Para ello, usaremos el parametro z-index con un número. El número más alto, estará encima del resto.</p>
+<p>Ejemplo:</p>
+<p>#Caja1{</p>
+<p>     z-index:1;</p>
+<p>}</p>
+<p>#caja2 {</p>
+<p>    z-index:2;</p>
+<p>}</p>
+<p></p>
+<p><strong>La caja 2, estará encima de la caja 1</strong></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id16">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Eventos sobre un elemento</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta16_130_2" class="block iDevice_content">
+<div class="exe-text"><p>Podemos cambiar el estilo de algún elemento por ejemplo cuando pongamos el ratón encima.</p>
+<p>Por ejemplo, podemos hacer que cuando ponga el ratón encima de una caja, esta crezca de tamaño o desaparezca.</p>
+<p></p>
+<p>Con opacity, podemos hacer que la caja se vuelva transparente, por ejemplo</p>
+<p></p>
+<p>Podemos tener un css así</p>
+<p></p>
+<p>#caja1:{</p>
+<p>    position:absolute;</p>
+<p>    top:200px:;</p>
+<p>    left:200px;</p>
+<p>    backgroud-image:url(mifoto.jpg);</p>
+<p>}</p>
+<p>caja1:hover{</p>
+<p>    opacity:0;</p>
+<p>}</p>
+<p></p>
+<p>el hover, añadirá la propiedad opacity ( transparente) a nuestra caja que dejará de verse</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="color_y_fondo.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="texto.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>

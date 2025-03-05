@@ -5,25 +5,24 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>CSS </title>
+<title>Listas | CSS </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Bernat Co" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
 <meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
-<meta name="description" content="CSS" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-0"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-7"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Omet navegació</a></p>
 <header id="header" ><div id="headerContent">CSS</div></header>
 <nav id="siteNav">
 <ul>
-   <li id="active"><a href="index.html" class="active daddy main-node">CSS</a></li>
+   <li><a href="index.html" class="daddy main-node">CSS</a></li>
    <li><a href="selectores.html" class="no-ch">Selectores</a></li>
    <li><a href="unidades_de_medida.html" class="no-ch">Unidades de medida</a></li>
    <li><a href="colores_bsicos.html" class="no-ch">Colores básicos</a></li>
@@ -31,66 +30,54 @@
    <li><a href="posicion.html" class="no-ch">Posicion</a></li>
    <li><a href="texto.html" class="no-ch">Texto</a></li>
    <li><a href="fuentes.html" class="no-ch">Fuentes</a></li>
-   <li><a href="listas.html" class="no-ch">Listas</a></li>
+   <li id="active"><a href="listas.html" class="active no-ch">Listas</a></li>
 </ul>
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="selectores.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+<a href="fuentes.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">CSS</h1></header>
-<article class="iDevice_wrapper textIdevice" id="id0">
-<div class="iDevice emphasis0" >
-<div id="ta0_120_2" class="block iDevice_content">
-
-</div>
-</div>
-</article>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id17">
+<header id="nodeDecoration"><h1 id="nodeTitle">Listas</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id12">
 <div class="iDevice emphasis1" >
-<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Donde pongo el código css?</h1></header>
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Listas</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta17_131_2" class="block iDevice_content">
-<div class="exe-text"><p>En un archivo a parte .css o en el head del html</p>
-<p></p></div>
-</div>
-</div>
-</div>
-</div>
-</article>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id18">
-<div class="iDevice emphasis1" >
-<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">En un fichero a parte</h1></header>
-<div class="iDevice_inner">
-<div class="iDevice_content_wrapper">
-<div id="ta18_132_2" class="block iDevice_content">
-<div class="exe-text"><p>Para ponerlo en un fichero a parte, hay que añadir esta linea en el head:</p>
-<p>&lt;link rel="stylesheet" type="text/css" href="css/style.css" /&gt;</p>
-<p>y tener el fichero con el código css, en una carpeta css y un fichero que se llame style.css</p></div>
-</div>
-</div>
-</div>
-</div>
-</article>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id19">
-<div class="iDevice emphasis1" >
-<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">En el Head directamente</h1></header>
-<div class="iDevice_inner">
-<div class="iDevice_content_wrapper">
-<div id="ta19_133_2" class="block iDevice_content">
-<div class="exe-text"><p>Podemos añadir el estilo css directamente dentro del head del html dentro de una etiqueta </p>
-<p>&lt;style&gt;  </p>
-<p>//mi codigo css.</p>
-<p>#caja1{</p>
-<p>   position:absolute</p>
-<p>   width:200;</p>
-<p>   top:20px;:</p>
-<p>}</p>
-<p>&lt;/style&gt;</p></div>
+<div id="ta12_132_2" class="block iDevice_content">
+<div class="exe-text"><table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Descripción</th>
+<th>Valores</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code><strong>list-style-type</strong></code></td>
+<td>Estilo aplicable a los marcadores visuales de las listas</td>
+<td>disc | circle | square | decimal | decimal-leading-zero | lower-roman | upper-roman | lower-greek | lower-latin | upper-latin | armenian | georgian | lower-alpha | upper-alpha | none</td>
+</tr>
+<tr>
+<td><code><strong>list-style-image</strong></code></td>
+<td>Imagen aplicable a los elementos de las listas</td>
+<td>url(«…») | none</td>
+</tr>
+<tr>
+<td><code><strong>list-style-position</strong></code></td>
+<td>Posición dentro de la lista de los elementos marcadores de las listas</td>
+<td>inside | outside</td>
+</tr>
+<tr>
+<td><code><strong>list-style</strong></code></td>
+<td>Permite establecer el estilo de la lista, la imagen y/o la posición</td>
+<td>list-style-type | list-style-position | list-style-image</td>
+</tr>
+</tbody>
+</table></div>
 </div>
 </div>
 </div>
@@ -103,7 +90,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="selectores.html" class="next"><span>Següent<span> &raquo;</span></span></a>
+<a href="fuentes.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
 </nav>
 </div>
 </div>
